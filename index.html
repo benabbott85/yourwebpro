@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourWebPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
     <style>
         #head{
             background:black;
             color: white;
-            width: 40%;
+            width: 42%;
             margin-left: 200px;
             padding: 10px;
             padding-left: 50px;
@@ -21,7 +22,7 @@
             background: orange;
            margin-left: 200px;
            /* margin-top: 100px; */
-           width: 40%;
+           width: 30%;
            border: solid 1px gray ;
            
         }
@@ -36,20 +37,25 @@
 }
 
 #greenbtn{
-    background: lightgreen;
+    background: green;
     color: white;
     width: 120px;
     height: 50px;
+    margin-top: -50px;
     
 }
 
 #content{
     border: solid 1px gray;
     text-align: center;
-    width: 50%;
+    width: 42%;
     margin-left: 200px;
-    margin-top: -15px;
+    margin-top: -10px;
    
+}
+
+textarea{
+    height: 60px;
 }
 
 #days{
@@ -59,12 +65,19 @@
 #save{
     height: 50px;
     width: 180px;
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 #tell{
     height: 50px;
     width: 180px; 
+}
+.btn{
+    height: 50px;
+    width: 180px; 
+    margin-left: 375px; 
+    background: lightgray;
+
 }
     </style>
 
@@ -72,8 +85,8 @@
 <div id="head">
 <h3>$167 still needed for this project</h3>
 </div >
-<p id="status">test</p>
-
+<p id="status">Status Bar</p>
+<!-- <br/> -->
 <div id="content">
    <p ><span >Only 3 days left</span> to fund this project</p> 
    <p>Join the 42 other donors who have 
@@ -83,11 +96,19 @@
     dollar helps
 </p>
 
-<textarea>$50 </textarea> <button id="greenbtn">Give Now</button>
+<textarea>$50 </textarea> 
+<button id="greenbtn">Give Now</button>
+<br/>
+<br/>
 <a id ="why" href="#"><p>Why give $50?</p></a>
 </div>
 <br/>
 <button id="save"> Save for later</button> <button id="tell">Tell your friends</button>
-
+<br/>
+<br/>
+<button type="button" class="btn btn-default btn-md">
+    <span class="glyphicon glyphicon-star"></span> Checkout <span class="glyphicon glyphicon-star"></span>
+  </button>
+</p>
 </body>
 </html>
